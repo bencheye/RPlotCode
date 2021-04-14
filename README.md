@@ -57,6 +57,32 @@
 
 ---
 
+## plotnetCode
+
+> 硕士论文原始PPI网络中比较**Driver**与**TF**、**DEG**、**Essential**五种中心性的差异
+>
+> 加入指定不同组别的显著性检验*P*值
+
+- 重点
+
+  1. 画不同分组中各模块**差异比较箱线图**；
+
+     ```R
+     ggboxplot(cyto_topo, x = "Group", y = centralityName,
+                 color="Group", palette = "jco") 
+     # palette = "jco" 参数不用修改
+     ```
+
+  2. 增加显著性检验*P*值，可以用*表示，可以更改检验方法，可以加入**多组间比较**
+
+     ```R
+     my_comparisons <- list(c("DriverGene", "Essential"), c("DriverGene","TF"), 
+                              c("DriverGene", "DEG"))
+     # my_comparisons 指定需要检验的分组
+     stat_compare_means(comparisons = my_comparisons)
+     ```
+
+---
 
 
 
