@@ -81,7 +81,10 @@
      # my_comparisons 指定需要检验的分组
      stat_compare_means(comparisons = my_comparisons)
      ```
-
+  3. 给组合图增加标题等注释
+    ```R
+    annotate_figure(pp1, bottom=text_grob("Degree",color="black", size = 15))
+    ```
 ---
 
 
