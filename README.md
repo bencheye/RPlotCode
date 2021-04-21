@@ -87,6 +87,23 @@
     ```
 ---
 
+## topology_distribution
 
+>   硕士论文PPI网络拓扑分布点图
+>
+>   ggplot2如何自定义使用两组数据不同节点画图
 
+-   重点
+
+    1.  自定义标注特殊节点方法
+
+        **使用另外数据集再画一个图层**
+
+        ```R
+        pp <- ggplot(plotDat, aes_string('Order', centralityType))+labs(x='') +
+              geom_point(size = 2.0, shape = 16, color = 'grey') + mytheme +
+              geom_point(data = xTmp, aes_string(x= 'Order', y = centralityType), color = "#FC4E07") 
+        ```
+
+---
 
