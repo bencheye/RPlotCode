@@ -28,6 +28,7 @@
   5. 取消Y轴标签
 
   6. ggpubr的ggarrange函数将多个图组合到一个绘图区
+  7. 修改默认绘图调色板 +scale_color_brewer(palette="Spectral")
 
 ---
 
