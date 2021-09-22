@@ -109,3 +109,5 @@
 
 ---
 
+# 图形四个边框保留
+ theme(panel.background = element_rect(fill='white', colour='black'))
